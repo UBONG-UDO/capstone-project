@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import MaxWidthContainer from "./max-width-container";
+import MaxWidthContainer from "../ui/max-width-container";
 import Link from "next/link";
 import { Menu, X, Search, ShoppingCart } from "lucide-react";
 
@@ -16,10 +16,10 @@ export default function Header() {
         </div>
 
         {isMobileNavbarOpen ? (
-          <X className="lg:hidden block cursor-pointer size-10 text-white z-50" onClick={() => setIsMobileNavbarOpen(false)} />
+          <X className="lg:hidden block cursor-pointer size-10 text-white" onClick={() => setIsMobileNavbarOpen(false)} />
         ) : (
           <Menu
-            className="lg:hidden block cursor-pointer size-10 text-white z-50"
+            className="lg:hidden block cursor-pointer size-10 text-white"
             onClick={() => setIsMobileNavbarOpen(true)}
           />
         )}
@@ -30,36 +30,36 @@ export default function Header() {
           }`}
         >
          
-         <div className="flex items-center gap-3">
+         <div className="flex items-center gap-3 z-50">
           <input
             type="search"
             name="search"
             id="search"
             className="bg-white cursor-auto border dark:border-white border-white py-2 px-2 w-[350px] rounded-lg focus:border-2 focus:dark:border-white focus:border-black focus:outline-none"
           />
-          <div className="text-white "><Link href=""><Search /></Link></div>
+          <div className="text-white z-50 "><Link href=""><Search /></Link></div>
           </div>
           
 
-          <nav>
-            <ul className="flex-col lg:flex-row space-x-8  flex gap-6 text-lg font-semibold text-white">
+          <nav className="z-50">
+            <ul className="flex-col lg:flex-row space-x-8 flex gap-6 text-lg font-semibold lg:text-white">
              <li>
-                  <Link href="">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="">About Us</Link>
+                  <Link href="/aboutUs">About Us</Link>
                 </li>
                 <li>
-                  <Link href="">Shop</Link>
+                  <Link href="/shop">Shop</Link>
                 </li>
                 <li>
-                  <Link href="">Past Projects</Link>
+                  <Link href="/pastProjects">Past Projects</Link>
                 </li>
                 <li>
-                  <Link href="">Contact Us</Link>
+                  <Link href="/contactUs">Contact Us</Link>
                 </li>
                  <li>
-                  <Link href=""><ShoppingCart /> </Link>
+                  <Link href="/shoppingCart"><ShoppingCart /> </Link>
                 </li>
             </ul>
           </nav>

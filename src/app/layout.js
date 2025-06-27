@@ -1,21 +1,20 @@
-import {Poppins} from 'next/font/google'
+"use client";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import Hero from '@/components/hero';
-import Products from '@/components/product';
-// import backgroundImage from './images/Battery.png';
-
-
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import Hero from "@/components/home/hero";
+import Products from "@/components/product/product";
 
 
 const poppinsFont = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "600"]
-})
+  weight: ["100", "300", "400", "500", "700", "600"],
+});
 
-export const metadata = {
+export const metaData = {
+  //i changed d to D in metadata
   title: "UB Solar",
   description: "UB Solar| Home of quality Solar gadgets and materials",
 };
@@ -23,24 +22,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${poppinsFont.variable} antialiased`}
-      >
+      <body className={`${poppinsFont.variable} antialiased`}>
+        <div>
+        <hr className="size-1"></hr>
         <Header />
-        <div className="border-2"
-        style={{
-          backgroundImage: `url('./images/Battery.png')`,
-        // backgroundImage: `url(${backgroundImage.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        }}
-        >
-        <Hero />
+        <hr className="size-1"></hr>
         </div>
-        <Products /> 
+          {/* <Hero /> */}
+        {/* <Products /> */}
         {children}
-        <Footer /> 
+        <Footer />
       </body>
     </html>
   );
