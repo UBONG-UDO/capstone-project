@@ -5,12 +5,12 @@ import MyCarousel from '../ui/carousel';
 import Link from 'next/link';
 // import backgroundImage from
 
-export default function Home() {
+export default function hero() {
   return (
     <div className=""
           style={{
             // backgroundImage: `url('./images/bg.png')`,
-            backgroundImage: `url('./images/pbg (3).jpeg')`,
+            backgroundImage: `url('./images/panelbgBright.png')`,
             // backgroundImage: `url(${backgroundImage.src})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -40,7 +40,7 @@ export default function Home() {
       
       <button
         className="mt-8 border-2 border-blue-950 rounded-[10px] text-blue-950 font-bold text-2xl px-2 lg:px-8 sm:px-3 
-       py-1.5 lg:py-3 sm:py-1.5  bg-white/80 hover:bg-white pointer-events-auto"><Link href="">
+       py-1.5 lg:py-3 sm:py-1.5  bg-white/80 hover:bg-white pointer-events-auto"><Link href="/shop">
         SHOP NOW
       </Link></button>
     </div>

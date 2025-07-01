@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function Page() {
+
+export default function ProductsPage() {
   return (
-    <div>
-      
-    </div>
+    
+      <p className='font-extrabold text-purple-700 text-6xl'>THIS ARE THE PRODUCTS</p>
+    
   );
 }

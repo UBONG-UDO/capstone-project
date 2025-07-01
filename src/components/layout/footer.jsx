@@ -2,7 +2,11 @@
 import React from 'react'
 import MaxWidthContainer from '../ui/max-width-container'
 import Link from 'next/link'
-import { Github, Linkedin, MessageCircleReply, PhoneCall, Twitter, Mail, MapPin} from "lucide-react";
+import { Github, Linkedin, PhoneCall, Twitter, Mail, MapPin} from "lucide-react";
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faXTwitter, faGithub, faLinkedin, faWhatsapp, } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Footer() {
@@ -12,19 +16,19 @@ export default function Footer() {
         <div className='grid lg:grid-cols-4 lg:gap-4 lg:p-4'>
           {/* SOCIAL COLUMN */}
           <div>
-      <ul className="text-left ml-32 text-sm font-light space-y-2.5 ">
+      <ul className="text-left ml-32 text-sm font-light space-y-5 ">
         <p className='text-base font-black sm:py-3'>Social</p>
         <li>
-        <Link href="https://www.linkedin.com/in/ubong-udo-304089150/"><span className='flex'><Linkedin />&nbsp; Linkedin</span></Link>
+        <Link href="https://www.linkedin.com/in/ubong-udo-304089150/"><span className='flex'><FontAwesomeIcon icon={faLinkedin} /></span></Link>
         </li>
         <li>
-        <Link href="https://github.com/UBONG-UDO/UBONG-UDO"><span className='flex'><Github />&nbsp;Github</span></Link>
+        <Link href="https://github.com/UBONG-UDO/UBONG-UDO"><span className='flex'><FontAwesomeIcon icon={faGithub} /></span></Link>
         </li>
         <li>
-        <Link href="https://wa.me/+2348168155901"><span className='flex'><MessageCircleReply />&nbsp;Whatsapp</span></Link>
+        <Link href="https://wa.me/+2348168155901"><span><FontAwesomeIcon icon={faWhatsapp} /></span></Link>
         </li>
         <li>
-        <Link href="https://x.com/udoubong123"><span className='flex'><Twitter />&nbsp;Twitter</span></Link>
+        <Link href="https://x.com/udoubong123"><span><FontAwesomeIcon icon={faXTwitter} /></span></Link>
         </li>
 			</ul>
           </div>
@@ -69,27 +73,21 @@ export default function Footer() {
           </div>
            {/* CONTACT COLUMN */}
           <div>
- <ul className="text-left text-sm ml-32  font-light space-y-2.5 ">
-  <p className='text-base font-black sm:py-3'>Contact</p>
+ <ul className="text-left text-sm ml-32  font-light space-y-4 ">
+  {/* <p className='text-base font-black sm:py-3'>Contact</p> */}
+  <p className="flex gap-1 pb-1 sm:py-3 text-4xl font-bold text-white">UB <span className="text-[20px] mt-3.5">Solar</span> </p>
         <li>
-        <span className='flex'><PhoneCall />&nbsp; +2348168155901</span>
+        <span className='flex'><FontAwesomeIcon icon={faPhone} />&nbsp; +2348168155901</span>
         </li>
         <li>
-       <span className='flex'><Mail />&nbsp; udoubong123@gmail.com</span>
+       <span className='flex'><FontAwesomeIcon icon={faEnvelope} />&nbsp; udoubong123@gmail.com</span>
         </li>
         <li>
-        <span className='flex'><MapPin />&nbsp; 59 Ogudu Road, Ojota, Lagos</span>
+        <span className='flex'><FontAwesomeIcon icon={faLocationDot} />&nbsp; 59 Ogudu Road, Ojota, Lagos</span>
         </li>
 			</ul>
           </div>
         </div>
-      {/* <div className="border  w-fit cursor-pointer relative"> */}
-          <p className="justify-center flex gap-1 pb-1 text-4xl font-bold text-white">UB <span className="text-[20px] mt-3.5">Solar</span> </p>
-           <hr></hr>
-          <div className='pt-[2.5px]'><marquee direction='left'><p className='py-2 text-sm'>Leading provider of high-quality solar equipment and solutions. Powering a 
-            sustainable future with cutting-edge technology.</p></marquee></div>
-        {/* </div> */}
-        <hr></hr>
         <div className='py-4 text-sm'>
       &copy; {new Date().getFullYear()} UB Solar. All rights reserved.
         </div>

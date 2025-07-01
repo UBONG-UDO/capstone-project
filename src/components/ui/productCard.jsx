@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
       </div>
       <div className="p-4">
         <h2 className="text-lg font-semibold">{product.name}</h2>
-        <div className="flex items-center space-x-2 mt-1">
+        <div className="flex items-ce nter space-x-2 mt-1">
           <span className="text-green-600 font-bold text-xl">
             ₦{product.price}
           </span>

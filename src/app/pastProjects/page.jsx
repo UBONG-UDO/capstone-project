@@ -1,9 +1,7 @@
 import React from 'react';
 
-export default function Page() {
+export default function PastProjectsPage() {
   return (
-    <div>
-      
-    </div>
+    <p className='text-7xl text-red-900 font-black'>Thi is Past Projects page</p>
   );
 }

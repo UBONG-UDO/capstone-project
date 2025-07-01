@@ -3,8 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import Hero from "@/components/home/hero";
-import Products from "@/components/product/product";
 
 
 const poppinsFont = Poppins({
@@ -28,7 +26,6 @@ export default function RootLayout({ children }) {
         <Header />
         <hr className="size-1"></hr>
         </div>
-          {/* <Hero /> */}
         {/* <Products /> */}
         {children}
         <Footer />

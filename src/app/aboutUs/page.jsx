@@ -1,10 +1,10 @@
-"use client";
+
 import React from 'react';
 
-export default function Page() {
+export default function AboutUsPage() {
   return (
-    <div>
-      {/* <p className='text-9xl'>Almighty About Page</p> */}
-    </div>
+    
+      <p className='text-9xl text-yellow-500'>Almighty About Page</p>
+    
   );
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import ProductCard from "@/components/ui/productCard";
 // import MaxWidthContaner from './max-width-container';
 
+
 const sampleProduct = [
   {
     name: "Felicity Inverter 7.5kVA 48V",
@@ -71,7 +72,7 @@ const sampleProduct = [
     image: "/images/dSolarPanel.webp",
   },
 ];
-export default function HomePage() {
+export default function ProductsPage() {
   return (
     <main className="p-8 flex flex-wrap gap-6 justify-center">
       {sampleProduct.map((product, idx) => (
