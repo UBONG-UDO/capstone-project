@@ -42,9 +42,9 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium text-gray-900">Address</p>
                     <p className="text-gray-600">
-                      123 Solar Street<br />
-                      Green City, GC 12345<br />
-                      United States
+                      19 Unity Close Ogudu, Ojota<br />
+                      Lagos<br />
+                      Nigeria
                     </p>
                   </div>
                 </div>
@@ -53,8 +53,8 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5 text-blue-900 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">Phone</p>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 123-4568</p>
+                    <p className="text-gray-600">+2348168155901</p>
+                    <p className="text-gray-600">+2348168297773</p>
                   </div>
                 </div>
                 
@@ -62,8 +62,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-blue-900 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600">info@solartech.com</p>
-                    <p className="text-gray-600">support@solartech.com</p>
+                    <p className="text-gray-600">udoubong123@gmail.com</p>
                   </div>
                 </div>
                 
@@ -90,17 +89,17 @@ export default function ContactPage() {
                 <div className="p-3 bg-blue-50 rounded-lg">
                   <p className="font-medium text-blue-900 mb-1">Sales Questions</p>
                   <p className="text-sm text-blue-700">Need product recommendations?</p>
-                  <p className="text-sm text-blue-700">Call: +1 (555) 123-4567</p>
+                  <p className="text-sm text-blue-700">Call: +2348168155901</p>
                 </div>
                 <div className="p-3 bg-green-50 rounded-lg">
                   <p className="font-medium text-green-900 mb-1">Technical Support</p>
                   <p className="text-sm text-green-700">Installation or product issues?</p>
-                  <p className="text-sm text-green-700">Call: +1 (555) 123-4568</p>
+                  <p className="text-sm text-green-700">Call: +2348168155901</p>
                 </div>
                 <div className="p-3 bg-purple-50 rounded-lg">
                   <p className="font-medium text-purple-900 mb-1">General Inquiries</p>
                   <p className="text-sm text-purple-700">Other questions or feedback?</p>
-                  <p className="text-sm text-purple-700">Email: info@solartech.com</p>
+                  <p className="text-sm text-purple-700">Email: udoubong123@gmail.com</p>
                 </div>
               </CardContent>
             </Card>
@@ -222,7 +221,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Do you offer installation services?</h4>
                   <p className="text-gray-600 text-sm mb-4">
-                    We partner with certified installers nationwide. Contact us for local installer recommendations.
+                    We do Install and also partner with certified installers nationwide. Contact us for local installer recommendations.
                   </p>
                 </div>
                 <div>
