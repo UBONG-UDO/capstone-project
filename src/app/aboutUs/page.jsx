@@ -1,9 +1,4 @@
-
 import React from 'react';
-
-
-
-
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -11,22 +6,22 @@ import { Zap, Users, Award, Globe, Target, Heart } from 'lucide-react';
 
 const team = [
   {
-    name: 'Sarah Johnson',
-    role: 'CEO & Founder',
-    image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=400',
-    description: '15+ years in renewable energy with a passion for sustainable technology.'
+    name: "Sarah Johnson",
+    role: "CEO & Founder",
+    image: "/images/Battery.png",
+    description: "15+ years in renewable energy with a passion for sustainable technology."
   },
   {
-    name: 'Michael Chen',
-    role: 'CTO',
-    image: 'https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=400',
-    description: 'Expert in solar technology and system integration with 12 years experience.'
+    name: "Michael Chen",
+    role: "CTO",
+    image: "/images/Battery.png",
+    description: "Expert in solar technology and system integration with 12 years experience."
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Head of Operations',
-    image: 'https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=400',
-    description: 'Operations specialist ensuring seamless delivery and customer satisfaction.'
+    name: "Emily Rodriguez",
+    role: "Head of Operations",
+    image: "/images/Battery.png",
+    description: "Operations specialist ensuring seamless delivery and customer satisfaction."
   }
 ];
 
@@ -68,7 +63,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About SolarTech
+              About UB Solar
             </h1>
             <p className="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
               Leading the renewable energy revolution with premium solar equipment and exceptional service since 2010
@@ -97,9 +92,10 @@ export default function AboutPage() {
                 <Badge className="bg-purple-100 text-purple-900 hover:bg-purple-200">Expert Support</Badge>
               </div>
             </div>
+
             <div className="relative">
               <Image
-                src="/images/panelInstallation.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/panelInstallation.jpeg"
                 alt="Solar panel installation"
                 width={600}
                 height={400}
@@ -175,15 +171,15 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">         
+             <div className="text-center mb-12">                                     
+           <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
             <p className="text-lg text-gray-600">
-              Passionate experts dedicated to advancing solar energy adoption
-            </p>
-          </div>
+             Passionate experts dedicated to advancing solar energy adoption
+           </p>
+         </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {team.map((member, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
@@ -191,7 +187,8 @@ export default function AboutPage() {
                     <Image
                       src={member.image}
                       alt={member.name}
-                      fill
+                      width={128}
+                      height={128}
                       className="rounded-full object-cover"
                     />
                   </div>
@@ -206,8 +203,8 @@ export default function AboutPage() {
                   </p>
                 </CardContent>
               </Card>
-            ))}
-          </div>
+            ))} 
+           </div>
         </div>
       </section>
 
@@ -237,4 +234,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
