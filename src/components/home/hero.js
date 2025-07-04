@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import MyCarousel from '../ui/carousel';
 import Link from 'next/link';
+import { Button } from '../ui/button';
 // import backgroundImage from
 
 export default function hero() {
@@ -37,12 +38,19 @@ export default function hero() {
       <p className="font-medium lg:text-2xl sm:text-base text-white text-center leading-loose mt-4 drop-shadow">
         ...Pure sine wave inverter for reliable power conversion<br />
       </p>
-      
+      <div className='mt-2 lg:mt-6 flex flex-col justify-center sm:space-x-5 sm:flex-row sm:justify-center sm:item-center 
+      lg:space-x-5  lg:flex-row lg:justify-center lg:items-center'>
       <button
-        className="mt-8 border-2 border-blue-950 rounded-[10px] text-blue-950 font-bold text-2xl px-2 lg:px-8 sm:px-3 
-       py-1.5 lg:py-3 sm:py-1.5  bg-white/80 hover:bg-white pointer-events-auto"><Link href="/shop">
+        className="mt- border-2 border-white rounded-[10px] text-white font-bold text-2xl px-2 lg:px-8 sm:px-3 
+       py-1.5 lg:py-3 sm:py-1.5  bg-blue-950 hover:bg-blue-900 pointer-events-auto"><Link href="/shop">
         SHOP NOW
       </Link></button>
+      <button
+        className="mt-3 py-2 border-2 border-blue-950 rounded-[10px] text-blue-950 font-bold text-base lg:mt-0.5 lg:py-3 lg:px-8 sm:py- 
+        sm:px-3 sm:mt-0 bg-white/80 hover:bg-white pointer-events-auto"><Link href="/auth">
+        Login/Register
+      </Link></button>
+      </div>
     </div>
   </div>
 </main>

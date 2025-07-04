@@ -3,6 +3,7 @@ import { Zap, Shield, Truck, Headphones, Star, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import ProductsPage from "./products.jsx/page";
 
 const features = [
   {
@@ -28,17 +29,17 @@ const features = [
 ];
 
 const stats = [
-  { number: '50K+', label: 'Happy Customers' },
-  { number: '200+', label: 'Products Available' },
-  { number: '15+', label: 'Years Experience' },
-  { number: '99.9%', label: 'Uptime Guarantee' }
+  { number: '5% Discount', label: 'On Total Amount' },
+  { number: 'Free', label: 'Consultation' },
+  { number: 'Free', label: 'Load Calculation' },
+  { number: 'Free', label: 'Six Months Maintenance After Installation' }
 ];
 export default function Home() {
   return (
     <div>
       <Hero />
         {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="lg:py-16 sm:py-14 py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -124,8 +125,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="text-red-800 font-extrabold text-2xl">This is from the page.js file </div>
-      {/* <Products /> */}
     </div>
   )
 }

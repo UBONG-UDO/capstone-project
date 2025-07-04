@@ -39,6 +39,9 @@ export default function Footer() {
         <li>
         <Link href="/"><span className='flex'>Home</span></Link>
         </li>
+         <li>
+        <Link href="/auth"><span className='flex'>Login/Register</span></Link>
+        </li>
         <li>
         <Link href="/aboutUs"><span className='flex'>About Us</span></Link>
         </li>

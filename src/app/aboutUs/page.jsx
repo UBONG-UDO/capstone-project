@@ -6,21 +6,21 @@ import { Zap, Users, Award, Globe, Target, Heart } from 'lucide-react';
 
 const team = [
   {
-    name: "Sarah Johnson",
+    name: "Udo Ubong",
     role: "CEO & Founder",
-    image: "/images/Battery.png",
-    description: "15+ years in renewable energy with a passion for sustainable technology."
-  },
-  {
-    name: "Michael Chen",
-    role: "CTO",
-    image: "/images/Battery.png",
+    image: "/images/p11.png",
     description: "Expert in solar technology and system integration with 12 years experience."
   },
   {
-    name: "Emily Rodriguez",
+    name: "Michael Akpan",
+    role: "CTO",
+    image: "/images/p3.jpeg",
+    description: "Expert in solar technology and system integration with 12 years experience."
+  },
+  {
+    name: "Samuel Anthony",
     role: "Head of Operations",
-    image: "/images/Battery.png",
+    image: "/images/p2.jpeg",
     description: "Operations specialist ensuring seamless delivery and customer satisfaction."
   }
 ];
@@ -51,7 +51,7 @@ const values = [
 const milestones = [
   { year: '2010', title: 'Company Founded', desc: 'Started with a vision to make solar energy accessible' },
   { year: '2015', title: 'Major Expansion', desc: 'Expanded product line and nationwide shipping' },
-  { year: '2020', title: '50K Customers', desc: 'Reached milestone of 50,000 satisfied customers' },
+  { year: '2020', title: 'Solar Generator', desc: 'Manufactured all in one affordable, portable and Mobile Solar Generator' },
   { year: '2025', title: 'Industry Leader', desc: 'Recognized as a leading solar equipment provider' }
 ];
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6">
-                At SolarTech, we're dedicated to accelerating the world's transition to sustainable energy. 
+                At UB Solar, we're dedicated to accelerating the world's transition to sustainable energy. 
                 We believe that everyone should have access to clean, reliable, and affordable solar power solutions.
               </p>
               <p className="text-lg text-gray-600 mb-6">
@@ -213,20 +213,20 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">50K+</div>
-              <div className="text-blue-200">Happy Customers</div>
+              <div className="text-4xl font-bold mb-2">5% Discount</div>
+              <div className="text-blue-200">On Total Amount</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-blue-200">Products</div>
+              <div className="text-4xl font-bold mb-2">Free</div>
+              <div className="text-blue-200">Consultation</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">15+</div>
-              <div className="text-blue-200">Years Experience</div>
+              <div className="text-4xl font-bold mb-2">Free</div>
+              <div className="text-blue-200">Load Calculation</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">99.9%</div>
-              <div className="text-blue-200">Customer Satisfaction</div>
+              <div className="text-4xl font-bold mb-2">Free</div>
+              <div className="text-blue-200">Six Months Maintenance After Installation</div>
             </div>
           </div>
         </div>
