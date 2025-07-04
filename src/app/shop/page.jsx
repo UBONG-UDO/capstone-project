@@ -11,7 +11,7 @@ const categoryLinks = [
   { id: 'dc-circuit-breaker', name: 'DC Circuit Breaker' },
   { id: 'dc-cable', name: 'DC Cable' },
   { id: 'battery-rack', name: 'Battery Rack' },
-;
+];
 
 export default function ShopPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
