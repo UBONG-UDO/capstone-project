@@ -1,4 +1,5 @@
 // data/products.js
+"use client";
 export const categories = [
   { id: 'all', name: 'All' },
   { id: 'inverter', name: 'Inverter' },

@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-
+import { CartProvider } from "./contexts/cartContext";
 
 const poppinsFont = Poppins({
   variable: "--font-poppins",
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppinsFont.variable} antialiased`}>
+        <CartProvider>
         <div>
         <hr className="size-1"></hr>
         <Header />
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         {/* <Products /> */}
         {children}
         <Footer />
+        </CartProvider>
       </body>
     </html>
   );

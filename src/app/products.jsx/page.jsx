@@ -159,7 +159,7 @@ export default function ProductsPage({
   }
 
   return (
-    <main>
+    <main className='bg-gray-100'>
       <ProductFilters
         searchTerm={search}
         selectedCategory={category}
@@ -168,7 +168,7 @@ export default function ProductsPage({
         onCategoryChange={setCategory}
         onSortChange={setSort}
       />
-      <div className="p-8 flex flex-wrap gap-6 justify-center">
+      <div className="p-8 flex flex-wrap gap-10 justify-center">
         {filtered.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

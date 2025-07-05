@@ -1,3 +1,5 @@
+"use client";
+import MaxWidthContainer from '@/components/ui/max-width-container';
 import React from 'react';
 
  
@@ -61,10 +63,26 @@ export default function ProjectsPage() {
     },
   ];
 return (
-    <main className="min-h-screen p-8 bg-gray-50">
-      <h1 className="text-3xl font-bold mb-8  lg:py-11 text-center">Past Projects</h1>
+  <div className='min-h-screen'>
+   
+    <main className="min-h-screen  bg-gray-50 py-10">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-20 gap-8 px-4 sm:px-8 lg:px-16">
+    <section className="bg-gray-600 text-white py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Past Projects
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto">
+              Our practical problem solving skill is leading the renewable energy revolution with premium solar equipment and exceptional service.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* <h1 className="text-3xl font-bold mb-8  lg:py-11 text-center">Past Projects</h1> */}
+ <MaxWidthContainer>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-20 lg:py-12 gap-8 py-10 px-4 sm:px-8 sm:py-11 lg:px-16">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -83,7 +101,9 @@ return (
           </div>
         ))}
       </div>
+    </MaxWidthContainer>
     </main>
+    </div>
   );
 }
 //   return (

@@ -2,6 +2,7 @@
 'use client';
 import React, { useState } from 'react';
 import Products from '../products.jsx/page';
+import MaxWidthContainer from '@/components/ui/max-width-container';
 
 const categoryLinks = [
   { id: 'inverter', name: 'Inverter' },
@@ -15,13 +16,26 @@ const categoryLinks = [
 
 export default function ShopPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
+{/* <section className="bg-blue-900 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              About UB Solar
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
+              Leading the renewable energy revolution with premium solar equipment and exceptional service since 2010
+            </p>
+          </div>
+        </div>
+      </section> */}
 
   return (
     <div>
-      <div className='pb-12'>
+         <div className='pb-12'>
         <section className="bg-blue-900 text-white py-15">
           <div>
-            <ul className="flex justify-center text-base font-bold space-x-14">
+            <p className='text-5xl font-black flex justify-center pb-8'>Shop</p>
+            <ul className="lg:flex lg:justify-center sm:flex sm:justify-center text-base font-bold space-x-14 hidden">
               {categoryLinks.map((cat) => (
                 <li key={cat.id}>
                   <button
@@ -44,7 +58,9 @@ export default function ShopPage() {
           </div>
         </section>
       </div>
+      <MaxWidthContainer>
       <Products selectedCategory={selectedCategory} />
+       </MaxWidthContainer>
     </div>
   );
 }

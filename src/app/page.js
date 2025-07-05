@@ -1,3 +1,4 @@
+"use client";
 import Hero from "@/components/home/hero"
 import { Zap, Shield, Truck, Headphones, Star, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
