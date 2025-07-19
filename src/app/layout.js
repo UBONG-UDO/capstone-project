@@ -3,33 +3,24 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { CartProvider } from "./contexts/cartContext";
+import { CartProvider } from "@/app/contexts/cartContext";
 
 const poppinsFont = Poppins({
-  variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "600"],
+  weight: ["100", "300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
-
-export const metaData = {
-  //i changed d to D in metadata
-  title: "UB Solar",
-  description: "UB Solar| Home of quality Solar gadgets and materials",
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppinsFont.variable} antialiased`}>
         <CartProvider>
-        <div>
-        <hr className="size-1"></hr>
-        <Header />
-        <hr className="size-1"></hr>
-        </div>
-        {/* <Products /> */}
-        {children}
-        <Footer />
+          <hr className="mt-0" />
+          <Header />
+          <hr className="mt-0" />
+          {children}
+          <Footer />
         </CartProvider>
       </body>
     </html>

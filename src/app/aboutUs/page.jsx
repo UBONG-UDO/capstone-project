@@ -9,8 +9,8 @@ const team = [
   {
     name: "Udo Ubong",
     role: "CEO & Founder",
-    image: "/images/p11.png",
-    description: "Expert in solar technology and system integration with 12 years experience."
+    image: "/images/ub2.png",
+    description: "15+ years in renewable energy with a passion for sustainable technology."
   },
   {
     name: "Michael Akpan",

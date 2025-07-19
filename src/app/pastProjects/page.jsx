@@ -40,20 +40,6 @@ export default function ProjectsPage() {
       owner: "Emeka Okafor",
       address: "Enugu, Nigeria",
     },
-    // {
-    //   id: 6,
-    //   image: "/images/oPast-projects6.png",
-    //   subtitle: "Event Booking System",
-    //   owner: "George Tamuno",
-    //   address: "Port Harcourt, Nigeria",
-    // },
-    //  {
-    //   id: 7,
-    //   image: "/images/oPast-projects6.png",
-    //   subtitle: "Event Booking System",
-    //   owner: "Williams Akpan",
-    //   address: "Akwa Ibom, Nigeria",
-    // },
     {
       id: 8,
       image: "/images/o8.png",
@@ -64,9 +50,7 @@ export default function ProjectsPage() {
   ];
 return (
   <div className='min-h-screen'>
-   
     <main className="min-h-screen  bg-gray-50 py-10">
-
     <section className="bg-gray-600 text-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -79,25 +63,23 @@ return (
           </div>
         </div>
       </section>
-
-      {/* <h1 className="text-3xl font-bold mb-8  lg:py-11 text-center">Past Projects</h1> */}
- <MaxWidthContainer>
+    <MaxWidthContainer>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-20 lg:py-12 gap-8 py-10 px-4 sm:px-8 sm:py-11 lg:px-16">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition border-2 border-amber-900"
+            className="bg-white p- rounded-2xl shadow-md hover:shadow-lg transition"
           >
             <img
               src={project.image}
               alt={project.subtitle}
               className="w-full rounded-xl mb-4 object-cover"
-              // Optionally add aspect ratio if you enable the plugin:
-              // className="w-full aspect-w-16 aspect-h-9 rounded-xl mb-4 object-cover"
             />
+            <div className='text-center'>
             <h2 className="text-xl font-semibold text-blue-600 mb-2">{project.subtitle}</h2>
             <p className="text-gray-700"><strong>Owner:</strong> {project.owner}</p>
             <p className="text-gray-500"><strong>Address:</strong> {project.address}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -106,6 +88,10 @@ return (
     </div>
   );
 }
+
+
+
+
 //   return (
 //     <main className="min-h-screen p-8 bg-gray-50">
 //       <h1 className="text-3xl font-bold mb-8 text-center">Past Projects</h1>
