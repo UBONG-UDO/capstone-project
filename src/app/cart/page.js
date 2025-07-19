@@ -3,6 +3,7 @@ import React from "react";
 // import { useCart } from "@/context/CartContext";
 // import { useCart } from "../contexts/cartContext";
 import { useCart } from "@/app/contexts/cartContext";
+import Link from "next/link";
 
 
 
@@ -70,12 +71,18 @@ export default function CartPage() {
             </button>
           </div>
           <div className="mt-6">
-            <a
+            <Link 
+            href="/checkout"
+              className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition"
+              >
+              Proceed to Checkout  
+            </Link>
+            {/* <a
               href="/checkout"
               className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition"
             >
               Proceed to Checkout
-            </a>
+            </a> */}
           </div>
         </>
       )}
