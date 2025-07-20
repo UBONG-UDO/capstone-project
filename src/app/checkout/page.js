@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
-// import { useCart } from "@/context/CartContext";
-import { useCart } from "@/app/contexts/cartContext";
 
+import React, { useState } from "react";
+import { useCart } from "@/app/contexts/cartContext";
 
 export default function CheckoutPage() {
   const { cartItems, clearCart } = useCart();
@@ -11,6 +10,10 @@ export default function CheckoutPage() {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  // const tax = (totalPrice * 0.08).toFixed(2);
+  //  const grandTotal = (totalPrice + parseFloat(tax)).toFixed(2);
+  const grandTotal = (totalPrice).toFixed(2);
 
   const handleCheckout = () => {
     alert("Checkout successful! Thank you for your purchase.");
@@ -27,30 +30,153 @@ export default function CheckoutPage() {
   }
 
   return (
-    <main className="p-8 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Checkout</h1>
-      <ul>
-        {cartItems.map((item) => (
-          <li key={item.id} className="flex justify-between py-2 border-b">
-            <span>
-              {item.name} x {item.quantity}
-            </span>
-            <span>₦{(item.price * item.quantity).toLocaleString()}</span>
-          </li>
-        ))}
-      </ul>
-      <div className="mt-4 text-xl font-bold">
-        Total: ₦{totalPrice.toLocaleString()}
+    <main className="p-6 md:p-12 bg-gray-50 min-h-screen">
+      <h1 className="text-3xl font-bold text-center mb-10">Checkout</h1>
+
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Left section */}
+        <div className="md:col-span-2 space-y-6">
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-xl font-semibold mb-4">🧾 Shipping Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input placeholder="First Name" className="border p-2 rounded" />
+              <input placeholder="Last Name" className="border p-2 rounded" />
+              <input placeholder="Email" className="col-span-2 border p-2 rounded" />
+              <input placeholder="Phone Number" className="col-span-2 border p-2 rounded" />
+              <input placeholder="Address" className="col-span-2 border p-2 rounded" />
+              <input placeholder="City" className="border p-2 rounded" />
+              <select className="border p-2 rounded">
+                <option>Select state</option>
+                <option>Lagos</option>
+                <option>Abuja</option>
+                <option>Port Harcourt</option>
+              </select>
+              <input placeholder="ZIP Code" className="col-span-2 border p-2 rounded" />
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-xl font-semibold mb-4">💳 Payment Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input placeholder="Card Number" className="col-span-2 border p-2 rounded" />
+              <input placeholder="Expiry Date" className="border p-2 rounded" />
+              <input placeholder="CVV" className="border p-2 rounded" />
+              <input placeholder="Name on Card" className="col-span-2 border p-2 rounded" />
+            </div>
+            <p className="text-sm text-gray-500 mt-2 flex items-center">
+              🔒 Your payment information is secure and encrypted
+            </p>
+          </div>
+        </div>
+
+        {/* Right section */}
+        <div className="bg-white rounded-xl shadow p-6 space-y-4">
+          <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
+          <ul className="divide-y">
+            {cartItems.map((item) => (
+              <li key={item.id} className="py-2 flex justify-between">
+                <div>
+                  {item.name}
+                  <div className="text-sm text-gray-500">Qty: {item.quantity}</div>
+                </div>
+                <span>
+                  ₦{(item.price * item.quantity).toLocaleString()}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <div className="pt-4 border-t text-sm">
+            <div className="flex justify-between">
+              <span>Subtotal</span>
+              <span>₦{totalPrice.toLocaleString()}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Shipping</span>
+              <span className="text-green-500">FREE</span>
+            </div>
+            {/* <div className="flex justify-between">
+              <span>Tax</span>
+              <span>₦{parseFloat(tax).toLocaleString()}</span>
+            </div> */}
+            <div className="flex justify-between font-bold text-lg border-t pt-2">
+              <span>Total</span>
+              <span>₦{parseFloat(grandTotal).toLocaleString()}</span>
+            </div>
+          </div>
+          <button
+            onClick={handleCheckout}
+            className="w-full bg-blue-900 text-white py-3 rounded hover:bg-blue-800 font-semibold"
+          >
+            Complete Order - ₦{parseFloat(grandTotal).toLocaleString()}
+          </button>
+          <ul className="text-xs text-gray-600 space-y-1 mt-2">
+            <li>✓ Free shipping on all orders</li>
+            <li>✓ 30-day return policy</li>
+            <li>✓ 2-year warranty included</li>
+          </ul>
+        </div>
       </div>
-      <button
-        onClick={handleCheckout}
-        className="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
-      >
-        Confirm Purchase
-      </button>
     </main>
   );
 }
+
+
+
+
+
+// "use client";
+// import React from "react";
+// // import { useCart } from "@/context/CartContext";
+// import { useCart } from "@/app/contexts/cartContext";
+
+
+// export default function CheckoutPage() {
+//   const { cartItems, clearCart } = useCart();
+
+//   const totalPrice = cartItems.reduce(
+//     (sum, item) => sum + item.price * item.quantity,
+//     0
+//   );
+
+//   const handleCheckout = () => {
+//     alert("Checkout successful! Thank you for your purchase.");
+//     clearCart();
+//   };
+
+//   if (cartItems.length === 0) {
+//     return (
+//       <main className="p-8 max-w-3xl mx-auto text-center">
+//         <h1 className="text-3xl font-bold mb-6">Checkout</h1>
+//         <p>Your cart is empty.</p>
+//       </main>
+//     );
+//   }
+
+//   return (
+//     <main className="p-8 max-w-3xl mx-auto">
+//       <h1 className="text-3xl font-bold mb-6">Checkout</h1>
+//       <ul>
+//         {cartItems.map((item) => (
+//           <li key={item.id} className="flex justify-between py-2 border-b">
+//             <span>
+//               {item.name} x {item.quantity}
+//             </span>
+//             <span>₦{(item.price * item.quantity).toLocaleString()}</span>
+//           </li>
+//         ))}
+//       </ul>
+//       <div className="mt-4 text-xl font-bold">
+//         Total: ₦{totalPrice.toLocaleString()}
+//       </div>
+//       <button
+//         onClick={handleCheckout}
+//         className="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+//       >
+//         Confirm Purchase
+//       </button>
+//     </main>
+//   );
+// }
 
 
 
