@@ -18,7 +18,7 @@ export default function ShopPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   return (
-    <div>
+    <div className="mt-[71px]">
       <div className="pb-12">
         <section className="bg-blue-900 text-white py-15">
           <div>

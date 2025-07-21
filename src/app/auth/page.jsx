@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Eye, EyeOff } from 'lucide-react';
 
 export default function AuthPage() {
   const [authType, setAuthType] = useState('login');
@@ -71,7 +72,7 @@ export default function AuthPage() {
               onClick={() => setShowPassword(!showPassword)}
               className="absolute right-3 top-3 text-sm text-blue-600"
             >
-              {showPassword ? 'Hide' : 'Show'}
+              {showPassword ? <EyeOff /> : <Eye />}
             </button>
           </div>
 
@@ -91,7 +92,7 @@ export default function AuthPage() {
                 onClick={() => setShowConfirm(!showConfirm)}
                 className="absolute right-3 top-3 text-sm text-blue-600"
               >
-                {showConfirm ? 'Hide' : 'Show'}
+                {showConfirm ? <EyeOff /> : <Eye />}
               </button>
             </div>
           )}

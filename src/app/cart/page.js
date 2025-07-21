@@ -17,7 +17,7 @@ export default function CartPage() {
   const grandTotal = totalPrice;
 
   return (
-    <main className="bg-gray-50 min-h-screen p-8">
+    <main className="bg-gray-50 min-h-screen p-8 mt-[90px]">
       <h1 className="text-3xl font-bold mb-8 text-center">Shopping Cart</h1>
 
       <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">

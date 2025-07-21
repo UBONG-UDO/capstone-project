@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppinsFont.variable} antialiased`}>
         <CartProvider>
-          <hr className="mt-0" />
           <Header />
-          <hr className="mt-0" />
+          <hr className="mt-0 fixed top-0 left-0 right-0 z-50" />
+          <hr className="mt-18 fixed top-0 left-0 right-0 z-50 shadow-md" />
           {children}
           <Footer />
         </CartProvider>

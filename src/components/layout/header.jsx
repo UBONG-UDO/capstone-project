@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-gray-800">
+    <header className="bg-gray-800 fixed top-0 left-0 right-0 z-50 shadow-md">
       <MaxWidthContainer className="flex lg:gap-45 justify-between items-center px-4 md:px-20 py-4 relative">
         <div className="cursor-pointer">
           <h1 className="flex gap-1 text-4xl font-bold text-white">
@@ -37,7 +37,7 @@ export default function Header() {
         <div
           className={`flex-col items-center gap-8 left-0 lg:flex lg:flex-row lg:justify-between lg:items-center w-full ${
             isMobileNavbarOpen
-              ? "flex h-[420px] bg-gray-400 z-20 absolute top-15"
+              ? "flex h-[420px] bg-gray-400 z-20 absolute top-18"
               : "hidden"
           }`}
         >

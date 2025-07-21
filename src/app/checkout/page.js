@@ -30,7 +30,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <main className="p-6 md:p-12 bg-gray-50 min-h-screen">
+    <main className="p-6 md:p-12 bg-gray-50 min-h-screen mt-[80px]">
       <h1 className="text-3xl font-bold text-center mb-10">Checkout</h1>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

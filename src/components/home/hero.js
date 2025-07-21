@@ -8,7 +8,7 @@ import { Button } from '../ui/button';
 
 export default function hero() {
   return (
-    <div className=""
+    <div className="mt-[71px]"
           style={{
             // backgroundImage: `url('./images/bg.png')`,
             backgroundImage: `url('./images/panelbgBright.png')`,
