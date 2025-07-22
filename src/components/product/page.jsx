@@ -76,7 +76,7 @@ const sampleProduct = [/* your existing 11 products */
     name: "MPPT Solar Charge Controller 60A",
     price: 204300,
     oldPrice: 253500,
-    image: "/images/cmppt-solar-charge-controller.webp",
+    image: "/images/cPowMr-60A-MPPT-Solar-Charge-Controller-12-48V.jpg",
     category: "charge-controller",
     rating: 4.6,
     reviews: 9,
@@ -87,18 +87,18 @@ const sampleProduct = [/* your existing 11 products */
     name: "PowMr 60A MPPT Solar Charge Controller 12-48V",
     price: 96500,
     oldPrice: 154400,
-    image: "/images/powmr-mppt-charge-controller.jpg",
+    image: "/images/controller.png",
     category: "charge-controller",
     rating: 4.1,
     reviews: 6,
-    inStock: false,
+    inStock: true,
   },
   {
     id: 9,
     name: "Solar Charge Controller PWM 60A",
     price: 64000,
     oldPrice: 70000,
-    image: "/images/solar-charge-controller-pwm.jpeg",
+    image: "/images/cSolar-Charge-Controller-60A-12-24-36-48v PWM-64000.jpeg",
     category: "charge-controller",
     rating: 3.8,
     reviews: 3,
@@ -109,7 +109,7 @@ const sampleProduct = [/* your existing 11 products */
     name: "Solar Panel 300W",
     price: 87000,
     oldPrice: 89500,
-    image: "/images/solar-panel-300w.jpg",
+    image: "/images/dSolar-Panel-images.jpg",
     category: "solar-panel",
     rating: 4.4,
     reviews: 11,
@@ -120,7 +120,7 @@ const sampleProduct = [/* your existing 11 products */
     name: "Generic Solar Panel",
     price: 64000,
     oldPrice: 70000,
-    image: "/images/solar-panel-generic.webp",
+    image: "/images/dSolarPanel.webp",
     category: "solar-panel",
     rating: 4.0,
     reviews: 5,
@@ -158,9 +158,9 @@ export default function ProductsPage({ searchTerm = "", selectedCategory = "all"
         onCategoryChange={setCategory}
         onSortChange={setSort}
       />
-      <div className="flex flex-wrap gap-10 justify-center">
+      <div className="flex flex-wrap gap-40 justify-center">
         {filtered.map((product) => (
-          <div key={product.id} className="relative w-full max-w-xs">
+          <div key={product.id} className="relative w-full max-w-xs border-8 border-green-700">
             <ProductCard product={product} />
             {product.inStock ? (
               <button
