@@ -113,47 +113,7 @@ export default function Header() {
 
 
 
-
-// "use client";
-
-// import { useState } from "react";
-// import MaxWidthContainer from "../ui/max-width-container";
-// import Link from "next/link";
-// import { Menu, X, Search, ShoppingCart } from "lucide-react";
-// import { useCart } from "@/app/contexts/cartContext";
-
-
-// export default function Header() {
-//   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false);
-//   const [selectedCategory, setSelectedCategory] = useState("all");
-//   const [searchTerm, setSearchTerm] = useState("");
-
-//   const { cartItems } = useCart();
-
-//   const getTotalItems = () => {
-//     return cartItems.reduce((sum, item) => sum + item.quantity, 0);
-//   };
-
-
-//   const handleCategoryChange = (value) => {
-//     setSelectedCategory(value);
-//     // Call optional external logic here if needed
-//   };
-
-//   const handleSearchChange = (e) => {
-//     setSearchTerm(e.target.value);
-//     // Call optional external search logic here
-//   };
-
-//   return (
-//     <header className="bg-gray-800 fixed top-0 left-0 right-0 z-50 shadow-md">
-//       <MaxWidthContainer className="flex justify-between items-center px-4 md:px-20 py-4 relative">
-//         {/* Logo */}
-//         <div className="cursor-pointer">
-//           <h1 className="flex gap-1 text-4xl font-bold text-white">
-//             UB <span className="text-[20px] mt-3.5">Solar</span>
-//           </h1>
-//         </div>
+ 
 
 //         {/* Mobile Toggle */}
 //         {isMobileNavbarOpen ? (

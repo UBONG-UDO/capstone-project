@@ -5,7 +5,7 @@ import React from "react";
 
 export default function ProductCard({ product }) {
   return (
-    <div className="bg-white rounded-xl shadow-md p-4 w-72 flex flex-col items-center">
+    <div className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
       {/* Image container */}
       <div className="w-full h- overflow-hidden rounded-md bg-gray-100 flex items-center justify-center">
         <img
