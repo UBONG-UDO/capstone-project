@@ -212,22 +212,22 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="py-16 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 ml-3 lg:grid-cols-4 lg:gap-8 gap-10 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">5% Discount</div>
-              <div className="text-blue-200">On Total Amount</div>
+              <div className="text-2xl font-bold whitespace-nowrap text-left mb-2">5% Discount</div>
+              <div className="text-blue-200 text-left">On Total Amount</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">Free</div>
-              <div className="text-blue-200">Consultation</div>
+              <div className="text-2xl font-bold text-left mb-2">Free</div>
+              <div className="text-blue-200 text-left">Consultation</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">Free</div>
-              <div className="text-blue-200">Load Calculation</div>
+              <div className="text-2xl font-bold text-left mb-2">Free</div>
+              <div className="text-blue-200 text-left">Load Calculation</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">Free</div>
-              <div className="text-blue-200">Six Months Maintenance After Installation</div>
+              <div className="text-2xl font-bold text-left mb-2">Free</div>
+              <div className="text-blue-200 text-left">Six Months Maintenance</div>
             </div>
           </div>
         </div>
