@@ -73,7 +73,7 @@ export default function CartPage() {
             </div>
             <div className="flex justify-between">
               <span>Shipping</span>
-              <span className="text-green-600">FREE</span>
+              <span className="text-blue-600">FREE</span>
             </div>
             {/* <div className="flex justify-between">
               <span>Tax</span>
@@ -88,7 +88,7 @@ export default function CartPage() {
 
           <Link
             href="/checkout"
-            className="mt-6 flex items-center justify-center w-full bg-green-600 text-white py-3 rounded hover:bg-green-700 transition"
+            className="mt-6 flex items-center justify-center w-full bg-blue-800 text-white py-3 rounded hover:bg-green-700 transition"
           >
              Proceed to Checkout <ArrowRight className="ml-3" />
           </Link>

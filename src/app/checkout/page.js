@@ -2,6 +2,10 @@
 
 import React, { useState } from "react";
 import { useCart } from "@/app/contexts/cartContext";
+import { ShoppingCart } from "lucide-react";
+import Image from "next/image";
+
+
 
 export default function CheckoutPage() {
   const { cartItems, clearCart } = useCart();
@@ -22,8 +26,15 @@ export default function CheckoutPage() {
 
   if (cartItems.length === 0) {
     return (
-      <main className="p-8 max-w-3xl mx-auto text-center">
+      <main className="p-8 max-w-3xl mx-auto text-center mt-[90px]">
         <h1 className="text-3xl font-bold mb-6">Checkout</h1>
+              <Image
+                src="/images/Empty-Cart.png"
+                alt="Empty Cart"
+                width={600}
+                height={400}
+                className="rounded-lg flex justify-center mb-5"
+              />
         <p>Your cart is empty.</p>
       </main>
     );

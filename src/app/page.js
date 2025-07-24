@@ -51,8 +51,8 @@ export default function Home() {
             </p>
           </div>
               <hr></hr>
-          <div className='pt-[2.5px]'><marquee direction='left'><p className='py-2 text-blue-950 text-sm'>Leading provider of high-quality solar equipment and solutions. Powering a 
-            sustainable future with cutting-edge technology.</p></marquee></div>
+          <div className='pt-[2.5px]'><p className='py-2 text-blue-950 text-sm text-center'>Leading provider of high-quality solar equipment and solutions. Powering a 
+            sustainable future with cutting-edge technology.</p></div>
         <hr></hr>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -78,13 +78,14 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-16 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">
+                <div className="text-2xl md:text-4xl font-bold mb-2 
+                lg:text-4xl lg:font-bold lg:mb-2">
                   {stat.number}
                 </div>
-                <div className="text-lg text-blue-200">
+                <div className="lg:text-lg sm:text-lg text-sm text-blue-200">
                   {stat.label}
                 </div>
               </div>
@@ -114,12 +115,12 @@ export default function Home() {
                 Get Expert Advice
               </Link>
             </Button> */}
-            <Link href="/shop"><Button className='bg-blue-800 font-semibold text-base text-black'>
+            <Link href="/shop"><Button className='bg-blue-800 font-bold text- text-white'>
               Browse Products 
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button></Link>
             <Link href="/contactUs">
-            <Button className='bg-white border-2 border-blue-700 font-semibold text-base text-black'>
+            <Button className='bg-white border-2 border-blue-800 font-bold text-base text-blue-800'>
               Get Expert Advice
             </Button></Link>
             

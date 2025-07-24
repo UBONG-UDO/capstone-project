@@ -41,7 +41,7 @@ export default function hero() {
       <div className='mt-2 lg:mt-6 flex flex-col justify-center sm:space-x-5 sm:flex-row sm:justify-center sm:item-center 
       lg:space-x-5  lg:flex-row lg:justify-center lg:items-center'>
       <button
-        className="mt- border-2 border-white rounded-[10px] text-white font-bold text-2xl px-2 lg:px-8 sm:px-3 
+        className=" rounded-[10px] text-white font-bold text-2xl px-2 lg:px-8 sm:px-3 
        py-1.5 lg:py-3 sm:py-1.5  bg-blue-950 hover:bg-blue-900 pointer-events-auto"><Link href="/shop">
         SHOP NOW
       </Link></button>

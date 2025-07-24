@@ -7,7 +7,7 @@ const MyCarousel = () => {
   return (
     <div className=''>
     <Carousel 
-      showArrows={true} 
+      showArrows={false} 
       autoPlay={true} 
       infiniteLoop={true} 
       showThumbs={false} 

@@ -51,7 +51,7 @@ export default function ProjectsPage() {
 return (
   <div className='min-h-screen mt-[32px]'>
     <main className="min-h-screen  bg-gray-50 py-10">
-    <section className="bg-gray-600 text-white py-10">
+    <section className="bg-blue-900 text-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">

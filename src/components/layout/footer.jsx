@@ -11,13 +11,16 @@ import { faXTwitter, faGithub, faLinkedin, faWhatsapp, } from '@fortawesome/free
 
 export default function Footer() {
   return (
-    <footer className="py-4 text-center text-white border-t mt-8 bg-gray-800">
+    <footer className="py-4  text-white border-t mt-8 bg-gray-800">
       <MaxWidthContainer>
-        <div className='grid lg:grid-cols-4 lg:gap-4 lg:p-4'>
+        <div className='grid lg:grid-cols-3 lg:gap-4 lg:p-4'>
           {/* SOCIAL COLUMN */}
-          <div>
-      <ul className="text-left ml-32 text-sm font-light space-y-5 ">
-        <p className='text-base font-black sm:py-3'>Social</p>
+          <div className='text-left ml-8'>
+            <p className="flex gap-1 pb-1 sm:py-3 py-3 text-4xl font-bold text-white">UB <span className="text-[20px] mt-3.5">Solar</span> </p>
+            <div className='pt-4'><p className='text-sm text-white text-left'>
+              Leading provider of high-quality solar <br /> equipment and solutions. Powering a <br />
+            sustainable future with cutting-edge <br /> technology.</p></div>
+      <ul className="text-sm font-light py-3 flex space-x-15 mt-10">
         <li>
         <Link href="https://www.linkedin.com/in/ubong-udo-304089150/"><span className='flex'><FontAwesomeIcon icon={faLinkedin} /></span></Link>
         </li>
@@ -31,11 +34,14 @@ export default function Footer() {
         <Link href="https://x.com/udoubong123"><span><FontAwesomeIcon icon={faXTwitter} /></span></Link>
         </li>
 			</ul>
+        <div className='py-8 text-sm text-left'>
+      &copy; {new Date().getFullYear()} UB Solar. All rights reserved.
+        </div>
           </div>
            {/* QUICK LINKS COLUMN */}
           <div>
- <ul className="text-left ml-32 text-sm font-light space-y-2.5 ">
-  <p className='text-base font-black sm:py-3'>Quick Links</p>
+ <ul className="text-left ml-8 text-sm font-light space-y-2.5 ">
+  <p className='text-2xl font-semibold sm:py-4 mb-8'>Quick Links</p>
         <li>
         <Link href="/"><span className='flex'>Home</span></Link>
         </li>
@@ -56,29 +62,11 @@ export default function Footer() {
         </li>
 			</ul>
           </div>
-           {/* PRODUCTS COLUMN */}
-          <div>
- <ul className="text-left ml-32 text-sm font-light space-y-2.5 ">
-  <p className='text-base font-black sm:py-3'>Products</p>
-        <li>
-        <Link href="https://www.linkedin.com/in/ubong-udo-304089150/"><span className='flex'>Inverter</span></Link>
-        </li>
-        <li>
-        <Link href="https://github.com/UBONG-UDO/UBONG-UDO"><span className='flex'>Battery</span></Link>
-        </li>
-        <li>
-        <Link href="https://wa.me/+2348168155901"><span className='flex'>Solar Panel</span></Link>
-        </li>
-        <li>
-        <Link href="https://x.com/udoubong123"><span className='flex'>Charge Controller</span></Link>
-        </li>
-			</ul>
-          </div>
            {/* CONTACT COLUMN */}
           <div>
- <ul className="text-left text-sm ml-32  font-light space-y-4 ">
+ <ul className="text-left text-sm ml-8  font-light space-y-4">
   {/* <p className='text-base font-black sm:py-3'>Contact</p> */}
-  <p className="flex gap-1 pb-1 sm:py-3 text-4xl font-bold text-white">UB <span className="text-[20px] mt-3.5">Solar</span> </p>
+  <p className='text-2xl text-left font-black sm:py-3 mb-8 mt-7'>Contact</p>
         <li>
         <span className='flex'><FontAwesomeIcon icon={faPhone} />&nbsp; +2348168155901</span>
         </li>
@@ -91,10 +79,7 @@ export default function Footer() {
 			</ul>
           </div>
         </div>
-        <div className='py-4 text-sm'>
-      &copy; {new Date().getFullYear()} UB Solar. All rights reserved.
-        </div>
-      </MaxWidthContainer>
+       </MaxWidthContainer>
     </footer>
   )
 }
