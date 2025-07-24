@@ -11,7 +11,7 @@ import { faXTwitter, faGithub, faLinkedin, faWhatsapp, } from '@fortawesome/free
 
 export default function Footer() {
   return (
-    <footer className="py-4  text-white border-t mt-8 bg-gray-800">
+    <footer className="py-4 lg:pl-45  text-white border-t mt-8 bg-gray-800">
       <MaxWidthContainer>
         <div className='grid lg:grid-cols-3 lg:gap-4 lg:p-4'>
           {/* SOCIAL COLUMN */}

@@ -4,28 +4,21 @@ import Head from 'next/head';
 import MyCarousel from '../ui/carousel';
 import Link from 'next/link';
 import { Button } from '../ui/button';
-// import backgroundImage from
+
 
 export default function hero() {
   return (
     <div className="mt-[71px]"
           style={{
-            // backgroundImage: `url('./images/bg.png')`,
             backgroundImage: `url('./images/panelbgBright.png')`,
-            // backgroundImage: `url(${backgroundImage.src})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
               >
     <>
-      {/* <Head className='pt-0.5 z-50'>
-        <title className='text-black text-9xl font-black'>Next.js Carousel Example</title>
-        <meta name="description" content="A simple carousel example in Next.js" />
-      </Head> */}
      <main style={{ maxWidth: '750px', margin: '0 auto', padding: '2rem', background: 'transparent' }}>
   <div className="relative">
-    {/* Carousel */}
     <MyCarousel />
 
     {/* Overlay */}
