@@ -25,7 +25,7 @@ export default function ShopPage() {
       <div className="pb-12">
         <section className="bg-blue-900 text-white py-15">
           <div>
-            <p className="text-5xl font-black flex justify-center pb-8">Shop</p>
+            <p className="text-5xl font-black flex justify-center lg:pb-8">Shop</p>
             <ul className="lg:flex lg:justify-center text-base font-bold space-x-14 hidden">
               {categoryLinks.map((cat) => (
                 <li key={cat.id}>

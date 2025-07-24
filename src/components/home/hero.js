@@ -23,12 +23,12 @@ export default function hero() {
 
     {/* Overlay */}
     <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
-      <h1 className="text-white text-shadow-border text-[35px] font-bold lg:text-[73px] sm:text-[48px] lg:font-black sm:font-bold text-center drop-shadow-lg 
+      <h1 className="text-white text-shadow-border text-[30px] font-bold lg:text-[73px] sm:text-[48px] lg:font-black sm:font-bold text-center drop-shadow-lg 
         lg:text-nowrap sm:text-wra">
         Power Your Future With <br />
-        <span className="text-blue-700">Solar Technology</span>
+        <span className="text-blue-700 lg:text-[30px]text-[28px] whitespace-nowrap">Solar Technology</span>
       </h1>
-      <p className="font-medium lg:text-2xl sm:text-base text-white text-center leading-loose mt-4 drop-shadow">
+      <p className="font-medium lg:text-2xl sm:text-base text-sm text-white text-center leading-loose mt-4 drop-shadow">
         ...Pure sine wave inverter for reliable power conversion<br />
       </p>
       <div className='mt-2 lg:mt-6 flex flex-col justify-center sm:space-x-5 sm:flex-row sm:justify-center sm:item-center 

@@ -211,7 +211,7 @@ export default function ProductsPage({
       />
 
       {/* Products */}
-      <div className="flex flex-wrap gap-20 justify-center py-10">
+      <div className="flex flex-wrap lg:gap-20 sm:gap-20 gap-7 justify-center py-6">
         {filtered.length > 0 ? (
           filtered.map((product) => (
             <div key={product.id} className="relative w-full max-w-xs">

@@ -8,11 +8,11 @@ export default function ProductFilters({
   onSortChange,
 }) {
   return (
-    <div className="flex flex-col gap-4 mx-110 md:flex-row md:justify-between mb-6">
+    <div className="flex flex-col gap-4 lg:mx-110 md:flex-row md:justify-between mb-4 lg:mb-6">
       <select
         value={selectedCategory}
         onChange={(e) => onCategoryChange(e.target.value)}
-        className="px-4 py-2 border rounded border-blue-800"
+        className="px-4 lg:py-2 py-2 border rounded border-blue-800"
       >
         <option value="all">All Categories</option>
         <option value="inverter">Inverter</option>
@@ -24,7 +24,7 @@ export default function ProductFilters({
       <select
         value={sortBy}
         onChange={(e) => onSortChange(e.target.value)}
-        className="px-4 py-2 border rounded border-blue-800"
+        className="px-4 lg:py-2 py-2 mt-5 border rounded border-blue-800"
       >
         <option value="">Default</option>
         <option value="price-low">Price: Low to High</option>

@@ -26,7 +26,7 @@ export default function CartPage() {
             <p className="text-center text-gray-500">Your cart is empty.
             <span>
                <Image
-                              src="/images/Empty-Cart.png"
+                              src="/images/emptyCart.png"
                               alt="Empty Cart"
                               width={600}
                               height={400}
