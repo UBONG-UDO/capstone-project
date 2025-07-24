@@ -36,7 +36,7 @@ const sampleProduct = [
     category: "inverter",
     rating: 4.0,
     reviews: 5,
-    inStock: false,
+    inStock: true,
   },
   {
     id: 4,
