@@ -29,7 +29,7 @@ export default function Header({ searchTerm, onSearchChange }) {
 
 <div className="text-white lg:hidden relative">
   <Link href="/cart" onClick={closeMobileMenu}>
-    <div className="relative flex items-center">
+    <div className="relative flex items-center text-white">
       <ShoppingCart />
       {getTotalItems() > 0 && (
         <span
@@ -56,9 +56,10 @@ export default function Header({ searchTerm, onSearchChange }) {
         )}
 
         <div
-          className={`flex-col items-center gap-8 left-0 lg:flex lg:flex-row lg:justify-between lg:items-center w-full transition-all duration-300 ${
+          className={`flex-col items-center gap-15 py-15  left-0 w-full transition-all duration-300 text-center 
+            text-white lg:flex lg:flex-row lg:justify-between lg:items-center  ${
             isMobileNavbarOpen
-              ? "flex h-[420px] bg-gray-400 z-20 absolute top-18"
+              ? "flex h-dvh bg-blue-800 z-20 absolute top-18"
               : "hidden lg:flex"
           }`}
         >
@@ -93,9 +94,9 @@ export default function Header({ searchTerm, onSearchChange }) {
               <li>
                 <Link href="/contactUs" onClick={closeMobileMenu}>Contact Us</Link>
               </li>
-              <li className="relative">
+              <li className="relative ">
                 <Link href="/cart" onClick={closeMobileMenu}>
-                  <ShoppingCart />
+                  <div className="flex justify-center" ><ShoppingCart /></div>
                   {getTotalItems() > 0 && (
                     <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
                       {getTotalItems()}
