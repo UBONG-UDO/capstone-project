@@ -78,7 +78,7 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-16 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid ml-3 grid-cols-2 gap-10 lg:grid-cols-4">
+          <div className="grid ml-3 grid-cols-2 gap-8 lg:grid-cols-4">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl text-left md:text-4xl font-bold mb-2 
